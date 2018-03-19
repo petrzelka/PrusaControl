@@ -60,7 +60,7 @@ class EventLoopRunner(QObject):
         else:
             self.splash_pix = QPixmap(self.base_path + 'data/img/splashscreen.png')
             self.progressbar_on = 1
-        self.splash = QSplashScreen(self.splash_pix, Qt.SplashScreen | Qt.WindowStaysOnTopHint)
+        self.splash = QSplashScreen(self.splash_pix, Qt.SplashScreen)
 
         if self.progressbar_on:
             self.progressBar = QProgressBar(self.splash)
